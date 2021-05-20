@@ -22,6 +22,10 @@ body:before {
 	right: 0;
 	background-color: rgba(0, 0, 0, 0.7);
 }
+.animado{
+    opacity: 0;
+    transition: all 1s;   
+}
 h1{
     height: 20vh;
     display: flex;
@@ -46,8 +50,11 @@ li{
 }
 a{
     text-decoration: none;
-    color: yellowgreen;
+    color: rgb(129, 252, 170);
     font-size: 3vw;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 
