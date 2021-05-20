@@ -1,0 +1,22 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+body{
+    margin: 1%;
+}
+table{
+    width: 100%;
+}
+table, th , td{
+    border: rgba(90, 90, 90, 0.5) 1px solid;
+    border-collapse:collapse;
+}
+th,td{
+    padding: 5px;
+}
+th{
+    text-align: left;
+}
+.fila-impar{
+    background-color: rgba(194, 193, 193, 0.247);
+}
