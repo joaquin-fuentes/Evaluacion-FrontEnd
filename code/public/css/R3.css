@@ -155,20 +155,22 @@ h1, p{
      }
      article{
         display: block;
-        height: 140vh;
+        height: 110vh;
     }
     .img-video{
         width: 100%;
-        height: 35%;
+        height: 25%;
     }
     .info-video{
         width: 100%;
-        height: 65%;
+        height: 75%;
         
     }
     .contenedor-info-video{
-        height: 0;
+        height: 100%;
         position: relative;
+        justify-content: start;
+        margin-top: 5%;
     }
     h1{
         font-size: 7.5vw;
@@ -178,5 +180,11 @@ h1, p{
         font-size: 5vw;
     }
     
+.open{
+    width: 12%;
+    height: 12vh;
+    font-size: 3vw; 
+    background-color: rgba(145, 145, 145, 0.733);
+}
   }
   
