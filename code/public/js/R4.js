@@ -8,9 +8,8 @@ window.addEventListener("load", function() {
     })
     .then(function(datos){
         
-       console.log(datos)
-       const fila = document.querySelector("tbody")
-        for (let i = 0; i < 20; i++){
+       const tabla = document.querySelector("table")
+        for (let i = 0; i < 6; i++){
 
             let nombre = datos[i].name
             let capital = datos[i].capital
@@ -19,17 +18,15 @@ window.addEventListener("load", function() {
             let superficie = datos[i].area
             let bandera = "<img src= " + datos[i].flag + ">"
 
-            console.log(nombre.id)
-            
 
-            fila.innerHTML +=    
+            tabla.innerHTML +=    
             "<tr>" +
-            "<td>" + nombre + "</td>" +
-            "<td>" + capital + "</td>"+
-            "<td>" + habitantes + "</td>"+
-            "<td>" + region + "</td>"+
-            "<td>" + superficie + "</td>"+
-            "<td>" + bandera + "</td>" 
+            "<td>" + "<p>" + nombre + "</p>" + "</td>" +
+            "<td>" + "<p>" +"Capital:"+ capital + "</p>" +  "</td>"+
+            "<td>" + "<p>" + habitantes + " habitantes" + "</p>" +  "</td>"+
+            "<td>" + "<p>" +"Región: "+ region +"</p>" +  "</td>"+
+            "<td>" + "<p>" +"Superficie: "+ superficie +" km²"+"</p>" +  "</td>"+
+            "<td>" + "<p>" + bandera + "</p>" + "</td>" 
             "</tr>";
         }
     
